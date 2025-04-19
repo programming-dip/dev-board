@@ -8,57 +8,60 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a3ac030042.js" crossorigin="anonymous"></script>
+
 </head>
-<body class="bg-blue-50">
-    <section>
-        <div class="navbar bg-base-100 shadow-sm">
+<body class="bg-blue-50 min-h-screen">
+  <!-- Navbar section -->
+    <nav class="py-6">
+        <div class="navbar container mx-auto h-24 bg-base-100 rounded-2xl">
             <div class="flex-1">
-              <a class="btn btn-ghost text-xl">daisyUI</a>
+              <a class="btn btn-ghost text-3xl font-thin"><img src="./assets/logo.png" alt=""><div>Dev<span class="font-bold">Board</span></div></a>
             </div>
-            <div class="flex-none">
-              <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                  <div class="indicator">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
-                    <span class="badge badge-sm indicator-item">8</span>
+            <div class="flex items-center space-x-8">
+              <div class="">
+                <div tabindex="0" role="button" class="bg-blue-50 w-28 h-16 content-center rounded-full">
+                  <div class="flex items-center justify-center space-x-3">
+                    <i class="fa-solid fa-square-check text-[#3752fd] text-4xl"></i>
+                    <span class="text-3xl font-bold"> 23</span>
+                    
                   </div>
                 </div>
-                <div
-                  tabindex="0"
-                  class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
-                  <div class="card-body">
-                    <span class="text-lg font-bold">8 Items</span>
-                    <span class="text-info">Subtotal: $999</span>
-                    <div class="card-actions">
-                      <button class="btn btn-primary btn-block">View cart</button>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
-              <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+              <div class="dropdown dropdown-end pr-4">
+                <div tabindex="0" role="button" class="btn btn-circle bg-blue-50 avatar size-16">
                   <div class="w-10 rounded-full">
-                    <img
-                      alt="Tailwind CSS Navbar component"
-                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                    <img src="./assets/theme-btn.png" >
                   </div>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                  <li>
-                    <a class="justify-between">
-                      Profile
-                      <span class="badge">New</span>
-                    </a>
-                  </li>
-                  <li><a>Settings</a></li>
-                  <li><a>Logout</a></li>
-                </ul>
+                </div>                
               </div>
             </div>
           </div>
-    </section>
+        </nav>
+
+        
+        <main class="container mx-auto bg-base-100 min-h-250 rounded-2xl">
+          <!-- Top cards section -->
+           <section class="grid-cols-3 pt-6 mx-6">
+            <!-- card -1 Top-->
+            <div class="card bg-blue-50 text-primary-content w-96">
+              <div class="card-body flex flex-row justify-evenly items-center">
+                <div class="bg-base-100 w-14 h-14 text-center content-center rounded-full">
+                  <i class="fa-solid fa-square-check text-[#3752fd] text-3xl"></i>
+                </div>
+                <div>
+                  <p class="text-black text-base">Task Assigned</p>
+                  <h2 class="card-title text-black text-3xl font-bold">05</h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card-2 Top -->
+
+           </section>
+        </main>
     
 </body>
 </html>
