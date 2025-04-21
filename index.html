@@ -1,67 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Board</title>
-    <!-- DaisyUI CDN and Tailwind CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Board</title>
+  <!-- DaisyUI CDN and Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Font Awesome CDN -->
-    <script src="https://kit.fontawesome.com/a3ac030042.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/a3ac030042.js" crossorigin="anonymous"></script>
 
+  <!-- Google Font CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <style>
+    .poppins {
+  font-family: "Poppins", sans-serif;
+  }
+  </style>
 </head>
-<body class="bg-blue-50 min-h-screen">
+
+<body class="bg-blue-50 min-h-screen poppins">
   <!-- Navbar section -->
-    <nav class="py-6">
-        <div class="navbar container mx-auto h-24 bg-base-100 rounded-2xl">
-            <div class="flex-1">
-              <a class="btn btn-ghost text-3xl font-thin"><img src="./assets/logo.png" alt=""><div>Dev<span class="font-bold">Board</span></div></a>
-            </div>
-            <div class="flex items-center space-x-8">
-              <div class="">
-                <div tabindex="0" role="button" class="bg-blue-50 w-28 h-16 content-center rounded-full">
-                  <div class="flex items-center justify-center space-x-3">
-                    <i class="fa-solid fa-square-check text-[#3752fd] text-4xl"></i>
-                    <span class="text-3xl font-bold"> 23</span>
-                    
-                  </div>
-                </div>
-                
-              </div>
-              <div class="dropdown dropdown-end pr-4">
-                <div tabindex="0" role="button" class="btn btn-circle bg-blue-50 avatar size-16">
-                  <div class="w-10 rounded-full">
-                    <img src="./assets/theme-btn.png" >
-                  </div>
-                </div>                
-              </div>
+  <nav class="py-6">
+    <div class="navbar container mx-auto h-24 bg-base-100 rounded-2xl">
+      <div class="flex-1 min-w-60">
+        <a class="btn btn-ghost font-light  min-w-60"><img src="./assets/logo.png" alt="">
+          <div class="w-full text-4xl">Dev<span class="font-bold">Board</span></div>
+        </a>
+      </div>
+      <div class="flex items-center space-x-8">
+        <div class="">
+          <div tabindex="0" role="button" class="bg-blue-50 w-28 h-16 content-center rounded-full">
+            <div class="flex items-center justify-center space-x-3">
+              <i class="fa-solid fa-square-check text-[#3752fd] text-4xl"></i>
+              <span class="text-3xl font-bold"> 23</span>
+
             </div>
           </div>
-        </nav>
 
-        
-        <main class="container mx-auto bg-base-100 min-h-250 rounded-2xl">
-          <!-- Top cards section -->
-           <section class="grid-cols-3 pt-6 mx-6">
-            <!-- card -1 Top-->
-            <div class="card bg-blue-50 text-primary-content w-96">
-              <div class="card-body flex flex-row justify-evenly items-center">
-                <div class="bg-base-100 w-14 h-14 text-center content-center rounded-full">
-                  <i class="fa-solid fa-square-check text-[#3752fd] text-3xl"></i>
-                </div>
-                <div>
-                  <p class="text-black text-base">Task Assigned</p>
-                  <h2 class="card-title text-black text-3xl font-bold">05</h2>
-                </div>
-              </div>
+        </div>
+        <div class="dropdown dropdown-end pr-4">
+          <div tabindex="0" role="button" class="btn btn-circle bg-blue-50 avatar size-16">
+            <div class="w-10 rounded-full">
+              <img src="./assets/theme-btn.png">
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-            <!-- Card-2 Top -->
 
-           </section>
-        </main>
-    
+
+
+  <!-- Main Contents -->
+  <div class="flex flex-row container mx-auto gap-6">
+
+    <!-- Main Section -->
+    <main class="container mx-auto bg-base-100 min-h-250 rounded-2xl px-6">
+      <!-- Top cards section -->
+      <section class="grid grid-cols-4 pt-6 gap-4">
+        <!-- card -1 Top-->
+        <div class="card col-span-1 bg-blue-50 text-primary-content">
+          <div class="card-body flex flex-row justify-evenly items-center">
+            <div class="bg-base-100 w-14 h-14 text-center content-center rounded-full">
+              <i class="fa-solid fa-square-check text-[#3752fd] text-3xl"></i>
+            </div>
+            <div>
+              <p class="text-black text-base">Task Assigned</p>
+              <h2 class="card-title text-black text-3xl font-bold">05</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-2 Top -->
+        <div class="card col-span-2 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] text-primary-content cursor-pointer">
+          <div class="card-body flex flex-row justify-evenly items-center">
+            <div class="">
+              <img src="./assets/board.png" alt="">
+            </div>
+            <div>
+              <p class="text-white text-2xl">Discover Something New Today!</p>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-3 Top -->
+        <div class="card col-span-1 bg-blue-50 text-primary-content">
+          <div class="card-body flex flex-row justify-evenly items-center">
+            <div class="bg-base-100 w-14 h-14 content-center rounded-full">
+              <img src="./assets/calender.png" alt="" class="mx-auto">
+            </div>
+            <div>
+              <p class="text-black text-2xl">Wed,</p>
+              <h2 class="card-title text-black text-2xl font-bold">Jul 28 2025</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- The Hrizontal Line -->
+      <div class="flex w-full flex-col">
+        <div class="divider divider-end"></div>
+      </div>
+
+
+      <!-- Main Cards section -->
+      <section class="grid grid-cols-3 pt-6 gap-9">
+        <!-- Card-1 -->
+        <div class="card bg-blue-50 col-span-1">
+          <div class="card-body">
+            <span class="badge badge-xl">ShopEase</span>
+            
+              <h2 class="text-2xl font-medium py-2">Fix Mobile Button Issue </h2>
+            
+              <div class="bg-base-100 rounded-md max-h-24 py-5 px-4">
+                <p class=" text-base font-normal truncate overflow-hidden opacity-50">
+                  Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                  and ensure onClick works properly
+                </p>
+              </div>
+              <div class="flex w-full flex-col">
+                <div class="divider -mb-1 -mt-1"></div>
+              </div>
+            
+            <div class="flex justify-between">
+              <div>
+                <small class="font-normal text-sm opacity-70">Deadline</small>
+                <p class="text-base font-medium">21 March 2025</p>
+              </div>
+              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6">Completed</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-2 -->
+        <div class="card bg-blue-50 col-span-1">
+          <div class="card-body">
+            <span class="badge badge-xl">CloudSync</span>
+            
+              <h2 class="text-2xl font-medium py-2">Add Dark Mode</h2>
+            
+              <div class="bg-base-100 rounded-md max-h-24 py-5 px-4">
+                <p class=" text-base font-normal truncate overflow-hidden opacity-50">
+                  Store the user's preference in <br> localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+                </p>
+              </div>
+              <div class="flex w-full flex-col">
+                <div class="divider -mb-1 -mt-1"></div>
+              </div>
+            
+            <div class="flex justify-between">
+              <div>
+                <small class="font-normal text-sm opacity-70">Deadline</small>
+                <p class="text-base font-medium">21 March 2025</p>
+              </div>
+              <button class="btn btn-disabled bg-[#3752FD] text-white font-medium rounded-md text-base p-6">Completed</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-3 -->
+        <div class="card bg-blue-50 col-span-1">
+          <div class="card-body">
+            <span class="badge badge-xl">SwiftPay</span>
+            
+              <h2 class="text-2xl font-medium py-2">Optimize  Home page </h2>
+            
+              <div class="bg-base-100 rounded-md max-h-24 py-5 px-4">
+                <p class=" text-base font-normal truncate overflow-hidden opacity-50">
+                  Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                  and ensure onClick works properly
+                </p>
+              </div>
+              <div class="flex w-full flex-col">
+                <div class="divider -mb-1 -mt-1"></div>
+              </div>
+            
+            <div class="flex justify-between">
+              <div>
+                <small class="font-normal text-sm opacity-70">Deadline</small>
+                <p class="text-base font-medium">21 March 2025</p>
+              </div>
+              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6">Completed</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-4 -->
+        <div class="card bg-blue-50 col-span-1">
+          <div class="card-body">
+            <span class="badge badge-xl">Meta</span>
+            
+              <h2 class="text-2xl font-medium py-2">Add new emoji 🤲</h2>
+            
+              <div class="bg-base-100 rounded-md max-h-24 py-5 px-4">
+                <p class=" text-base font-normal truncate overflow-hidden opacity-50">
+                  Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                  and ensure onClick works properly
+                </p>
+              </div>
+              <div class="flex w-full flex-col">
+                <div class="divider -mb-1 -mt-1"></div>
+              </div>
+            
+            <div class="flex justify-between">
+              <div>
+                <small class="font-normal text-sm opacity-70">Deadline</small>
+                <p class="text-base font-medium">21 March 2025</p>
+              </div>
+              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6">Completed</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-5 -->
+        <div class="card bg-blue-50 col-span-1">
+          <div class="card-body">
+            <span class="badge badge-xl">Google LLC</span>
+            
+              <h2 class="text-2xl font-medium py-2">Integrate OpenAI API </h2>
+            
+              <div class="bg-base-100 rounded-md max-h-24 py-5 px-4">
+                <p class=" text-base font-normal truncate overflow-hidden opacity-50">
+                  Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                  and ensure onClick works properly
+                </p>
+              </div>
+              <div class="flex w-full flex-col">
+                <div class="divider -mb-1 -mt-1"></div>
+              </div>
+            
+            <div class="flex justify-between">
+              <div>
+                <small class="font-normal text-sm opacity-70">Deadline</small>
+                <p class="text-base font-medium">21 March 2025</p>
+              </div>
+              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6">Completed</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-6 -->
+        <div class="card bg-blue-50 col-span-1">
+          <div class="card-body">
+            <span class="badge badge-xl">Glassdoar</span>
+            
+              <h2 class="text-2xl font-medium py-2">Improve Job searching </h2>
+            
+              <div class="bg-base-100 rounded-md max-h-24 py-5 px-4">
+                <p class=" text-base font-normal truncate overflow-hidden opacity-50">
+                  Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                  and ensure onClick works properly
+                </p>
+              </div>
+              <div class="flex w-full flex-col">
+                <div class="divider -mb-1 -mt-1"></div>
+              </div>
+            
+            <div class="flex justify-between">
+              <div>
+                <small class="font-normal text-sm opacity-70">Deadline</small>
+                <p class="text-base font-medium">21 March 2025</p>
+              </div>
+              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6">Completed</button>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+    <!-- Right Side -->
+    <aside class="container mx-auto flex flex-col items-center bg-base-100 min-h-250 rounded-2xl px-6  flex-1 min-w-1/4">
+      <div class="flex justify-center items-center pt-7">
+        <img src="./assets/activity.png" alt="">
+        <h3 class="pl-3 font-medium text-2xl">Activity Log</h3>
+      </div>
+      <button class="btn mx-auto my-3 btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-5">Clear History</button>
+
+      <div class="flex w-full flex-col -my-4">
+        <div class="divider divider-end"></div>
+      </div>
+
+      <div class="flex flex-col justify-between items-center">
+        <p class="bg-blue-50 rounded-md p-2 mx-3 my-4">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+        <p class="bg-blue-50 rounded-md p-2 mx-3 my-4">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+
+      </div>
+
+    </aside>
+  </div>
+
 </body>
+
 </html>
