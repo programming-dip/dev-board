@@ -38,14 +38,14 @@
           <div tabindex="0" role="button" class="bg-blue-50 w-28 h-16 content-center rounded-full">
             <div class="flex items-center justify-center space-x-3">
               <i class="fa-solid fa-square-check text-[#3752fd] text-4xl"></i>
-              <span class="text-3xl font-bold"> 23</span>
+              <span class="text-3xl font-bold" id="done-tasks"> 23</span>
 
             </div>
           </div>
 
         </div>
-        <div class="dropdown dropdown-end pr-4">
-          <div tabindex="0" role="button" class="btn btn-circle bg-blue-50 avatar size-16">
+        <div class=" pr-4">
+          <div class="btn btn-circle bg-blue-50 avatar size-16" id="theme-btn">
             <div class="w-10 rounded-full">
               <img src="./assets/theme-btn.png">
             </div>
@@ -73,13 +73,13 @@
             </div>
             <div>
               <p class="text-black text-base">Task Assigned</p>
-              <h2 class="card-title text-black text-3xl font-bold">05</h2>
+              <h2 class="card-title text-black text-3xl font-bold" id="left-tasks"></h2>
             </div>
           </div>
         </div>
 
         <!-- Card-2 Top -->
-        <div class="card col-span-2 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] text-primary-content cursor-pointer">
+        <div class="card col-span-2 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] text-primary-content cursor-pointer" id="blog-card">
           <div class="card-body flex flex-row justify-evenly items-center">
             <div class="">
               <img src="./assets/board.png" alt="">
@@ -98,8 +98,8 @@
               <img src="./assets/calender.png" alt="" class="mx-auto">
             </div>
             <div>
-              <p class="text-black text-2xl">Wed,</p>
-              <h2 class="card-title text-black text-2xl font-bold">Jul 28 2025</h2>
+              <p class="text-black text-2xl" id="current-day"></p>
+              <h2 class="card-title text-black text-2xl font-bold" id="current-date"></h2>
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@
                 <small class="font-normal text-sm opacity-70">Deadline</small>
                 <p class="text-base font-medium">21 March 2025</p>
               </div>
-              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6">Completed</button>
+              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6 complete-btn">Completed</button>
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@
                 <small class="font-normal text-sm opacity-70">Deadline</small>
                 <p class="text-base font-medium">21 March 2025</p>
               </div>
-              <button class="btn btn-disabled bg-[#3752FD] text-white font-medium rounded-md text-base p-6">Completed</button>
+              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6 complete-btn">Completed</button>
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@
                 <small class="font-normal text-sm opacity-70">Deadline</small>
                 <p class="text-base font-medium">21 March 2025</p>
               </div>
-              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6">Completed</button>
+              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6 complete-btn">Completed</button>
             </div>
           </div>
         </div>
@@ -214,7 +214,7 @@
                 <small class="font-normal text-sm opacity-70">Deadline</small>
                 <p class="text-base font-medium">21 March 2025</p>
               </div>
-              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6">Completed</button>
+              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6 complete-btn">Completed</button>
             </div>
           </div>
         </div>
@@ -241,7 +241,7 @@
                 <small class="font-normal text-sm opacity-70">Deadline</small>
                 <p class="text-base font-medium">21 March 2025</p>
               </div>
-              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6">Completed</button>
+              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6 complete-btn">Completed</button>
             </div>
           </div>
         </div>
@@ -268,7 +268,7 @@
                 <small class="font-normal text-sm opacity-70">Deadline</small>
                 <p class="text-base font-medium">21 March 2025</p>
               </div>
-              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6">Completed</button>
+              <button class="btn btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-6 complete-btn">Completed</button>
             </div>
           </div>
         </div>
@@ -281,21 +281,23 @@
         <img src="./assets/activity.png" alt="">
         <h3 class="pl-3 font-medium text-2xl">Activity Log</h3>
       </div>
-      <button class="btn mx-auto my-3 btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-5">Clear History</button>
+      <button class="btn mx-auto my-3 btn-active bg-[#3752FD] text-white font-medium rounded-md text-base p-5" id="clear-history-btn">Clear History</button>
 
       <div class="flex w-full flex-col -my-4">
         <div class="divider divider-end"></div>
       </div>
 
-      <div class="flex flex-col justify-between items-center">
-        <p class="bg-blue-50 rounded-md p-2 mx-3 my-4">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-        <p class="bg-blue-50 rounded-md p-2 mx-3 my-4">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+      <div class="flex flex-col justify-between items-center" id="activity-log-texts-container">
+        
 
       </div>
 
     </aside>
   </div>
 
+
+  <script src="./script/main.js"></script>
+  <script src="./script/utilities.js"></script>
 </body>
 
 </html>
